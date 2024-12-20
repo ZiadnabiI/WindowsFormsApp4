@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4761061B-4346-4695-BEC2-B27CC1BF3F80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Employee.Designer.cs">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Gym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Gym.Designer.cs">
+      <DependentUpon>Add Gym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Member.Designer.cs">
+      <DependentUpon>Add Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add trainer.Designer.cs">
+      <DependentUpon>Add trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GYM.Designer.cs">
+      <DependentUpon>GYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GYMDataSet.cs">
+      <DependentUpon>GYMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GYMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GYMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GYMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GYMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Membership.Designer.cs">
+      <DependentUpon>Membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.Designer.cs">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Employee.resx">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Gym.resx">
+      <DependentUpon>Add Gym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Member.resx">
+      <DependentUpon>Add Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add trainer.resx">
+      <DependentUpon>Add trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GYM.resx">
+      <DependentUpon>GYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Membership.resx">
+      <DependentUpon>Membership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Trainer.resx">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GYMDataSet.xsc">
+      <DependentUpon>GYMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GYMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GYMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GYMDataSet.xss">
+      <DependentUpon>GYMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GYMDataSet1.xsc">
+      <DependentUpon>GYMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GYMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GYMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GYMDataSet1.xss">
+      <DependentUpon>GYMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
